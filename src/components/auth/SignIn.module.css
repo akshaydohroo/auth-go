@@ -50,6 +50,8 @@
   font-size: larger;
   padding: 5px 0;
   font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
 }
 .signin-form-description {
   color: var(--text-primary);
