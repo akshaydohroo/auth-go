@@ -1,0 +1,37 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  flex-wrap: nowrap;
+}
+@media only screen and (max-width: 900px) {
+  .app-container {
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: unset;
+  }
+  .right-triangle{
+    display: none;
+  }
+}
+.left-triangle {
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background-color: var(--primary-color);
+  height: calc(75px + 8vw + 8vh);
+  width: calc(75px + 8vw + 8vh);
+  position: absolute;
+  bottom: 0;
+  opacity: 0.6;
+}
+.right-triangle {
+  clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
+  background-color: var(--primary-color);
+  height: calc(150px + 18vw + 18vh);
+  width: calc(100px + 30vw + 30vh);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+
+}

@@ -1,0 +1,27 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px 0;
+  position: relative;
+}
+.input-label {
+  font-size: smaller;
+  color: var(--text-primary);
+  order: -1;
+}
+.input {
+  border: none;
+  border-bottom: 1px solid var(--text-primary);
+  width: 100%;
+  font-size: larger;
+}
+.input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+}
+.input:focus + label {
+  color: var(--primary-color);
+}
+

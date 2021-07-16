@@ -1,0 +1,72 @@
+.signin-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+.signin-form {
+  width: calc(270px + 12vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px var(--primary-color);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: white;
+}
+.signin-form-legend {
+  font-size: calc(14px + 0.5vh + 0.5vw);
+  text-align: center;
+  width: 80%;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: calc(5px + 0.8vh + 0.8vw);
+}
+.signin-form-legend-highlight {
+  color: var(--primary-color);
+}
+.signin-form-divide {
+  width: 100%;
+  height: 0%;
+  border-top: solid 1px var(--primary-color);
+  border-bottom: none;
+  margin-bottom: 30px;
+}
+.signin-header {
+  font-size: calc(18px + 0.4vw + 0.4vh);
+  color: var(--text-primary);
+  margin: calc(2vh + 1vw);
+}
+.signin-form-submit {
+  background-color: #18c2f0;
+  color: white;
+  width: 70%;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 5px 0;
+  font-family: "Poppins", sans-serif;
+}
+.signin-form-description {
+  color: var(--text-primary);
+  font-size: calc(12px + 0.1vh + 0.1vw);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.signin-form-description-hightlight {
+  color: var(--primary-color);
+}
+.signin-form-forgetPassword {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: var(--text-primary);
+  font-size: smaller;
+  padding: 2px;
+  cursor: pointer;
+}
